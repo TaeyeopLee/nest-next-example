@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import Link from 'next/link';
+import { FC } from "react";
+import Link from "next/link";
 
 const Sidebar: FC = () => {
   return (
@@ -9,15 +9,15 @@ const Sidebar: FC = () => {
           <a
             style={{
               fontSize: 22,
-              textDecoration: 'none',
-              textTransform: 'uppercase',
+              textDecoration: "none",
+              textTransform: "uppercase",
             }}
           >
             EXAMPLE APP
           </a>
         </Link>
       </div>
-      <ul style={{ listStyle: 'none', margin: 0, padding: 0 }}>
+      <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
         <li>
           <Link href="/views/home" as="/">
             <a>Home</a>

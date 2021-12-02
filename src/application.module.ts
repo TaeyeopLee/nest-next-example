@@ -3,7 +3,9 @@ import { RenderModule } from "nest-next";
 import Next from "next";
 import { AppController } from "./app.controller";
 import { BlogController } from "./blog/blog.controller";
+import { BlogModule } from "./blog/blog.module";
 import { BlogService } from "./blog/blog.service";
+import { UserModule } from "./user/user.module";
 
 @Module({
   imports: [
@@ -13,8 +15,8 @@ import { BlogService } from "./blog/blog.service";
         // conf: { useFilesystemPublicRoutes: false },
       })
     ),
+    UserModule, BlogModule
   ],
-  controllers: [AppController, BlogController],
-  providers: [BlogService],
+  controllers: [AppController],
 })
 export class AppModule {}
